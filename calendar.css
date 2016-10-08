@@ -15,7 +15,9 @@
   padding: 15px;
   text-transform: lowercase;
   font-size: 15px;
+  opacity: .75;
   background: #fff;
+  border-radius: 25px;
 }
 
 .ui-datepicker-header{
