@@ -76,6 +76,43 @@ function badgers() {
     (document.getElementById('badgers').style.display == 'block') ? 'none' : 'block';
 }
 
+function populatePipeline() {
+  var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+  var limit = 5;
+
+  document.getElementById("work").innerHTML = '';
+
+  for (let i = 0; i < limit; i++) {
+    document.getElementById("work").innerHTML += 
+      "<a href='item" + i + "'>" + pipes[i] + "</a>";
+  }
+}
+
+function rotatePipeline(cw) {
+  var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+  var limit = 5;
+
+  document.getElementById("work").innerHTML = '';
+  if (cw) {
+    rotate(a);
+  } else {
+    rotateRev(a);
+  }
+
+  for (let i = 0; i < limit; i++) {
+    document.getElementById("work").innerHTML += 
+      "<a href='item" + i + "'>" + pipes[i] + "</a>";
+  }
+}
+
+function rotateRev(a) {
+  a.unshift(a.pop());
+}
+
+function rotate(a) {
+  a.push(a.splice(0,1)[0]);
+}
+
 window.onload = function() {
   
   /*populateTop3Activites(); // put these on intervals
