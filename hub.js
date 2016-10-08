@@ -75,33 +75,32 @@ function badgers() {
   document.getElementById('badgers').style.display = 
     (document.getElementById('badgers').style.display == 'block') ? 'none' : 'block';
 }
-
+var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
 function populatePipeline() {
-  var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+  
   var limit = 5;
 
   document.getElementById("work").innerHTML = '';
 
   for (let i = 0; i < limit; i++) {
     document.getElementById("work").innerHTML += 
-      "<a href='item" + i + "'>" + pipes[i] + "</a>";
+      "<a href='#item" + i + "'>" + pipes[i] + "</a>";
   }
 }
 
 function rotatePipeline(cw) {
-  var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
   var limit = 5;
 
   document.getElementById("work").innerHTML = '';
   if (cw) {
-    rotate(a);
+    rotate(pipes);
   } else {
-    rotateRev(a);
+    rotateRev(pipes);
   }
 
   for (let i = 0; i < limit; i++) {
     document.getElementById("work").innerHTML += 
-      "<a href='item" + i + "'>" + pipes[i] + "</a>";
+      "<a href='#item" + i + "'>" + pipes[i] + "</a>";
   }
 }
 
