@@ -1,16 +1,21 @@
-.container{
+.module {
+
+}
+
+.hub{
   display: flex;
+  justify-content: space-between;
 }
 
-.module-left {
+.survey {
 
 }
 
-.module-middle {
+.points {
   
 }
 
-.module-right {
+.classified {
   
 }
 
@@ -29,4 +34,8 @@
 
 h3 {
   margin-top: 0px;
+}
+
+.points {
+  color: green;
 }
