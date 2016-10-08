@@ -15,7 +15,7 @@
       <li class="active"><a href="#hub" data-toggle="tab">Hub</a></li>
       <li><a href="#pipeline" data-toggle="tab">Pipeline</a></li>
       <li><a href="#calendar" data-toggle="tab">Calendar</a></li>
-      <li><a href="#map" data-toggle="tab">Map</a></li>
+      <li><a href="#map_pane" data-toggle="tab">Map</a></li>
       <li><a href="#profile" data-toggle="tab">Profile</a></li>
     </ul>
   </div>
@@ -109,7 +109,12 @@
         <div class="tab-pane" id="calendar">Calendar Tab.
           <div id = "calendar-container"></div>
         </div>
-        <div class="tab-pane" id="map">Map Tab.</div>
+        <div class="tab-pane" id="map_pane">  
+            <h3>My Google Maps Demo</h3>
+            <p style="background-color:powderblue;">someone please help me </p>
+            <div id="map"></div>
+            
+        </div>
         <div class="tab-pane" id="profile">
           <h3> Profile</h3>
           <p>Insights about yourself</p>
@@ -128,5 +133,10 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src = "framecalendar.js"></script>
+  <script src = "mapinit.js"></script>     
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS6VVHtcbw9E2f4jdq4IBgt8bDU6wBbHU&callback=initMap">
+  </script>
+  
 </body>
 </html>
