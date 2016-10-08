@@ -51,10 +51,6 @@
 
 }
 
-.points {
-  
-}
-
 .classified {
   
 }
@@ -72,7 +68,8 @@
   border-top: 0px;
 }
 
-h3 {
+hr {
+  margin-bottom: 0px;
   margin-top: 0px;
 }
 
@@ -80,18 +77,29 @@ h3 {
   color: green;
 }
 
+.large {
+  font-size: 2em;
+}
+
+.med {
+  font-size: 1.5em;
+}
+
 div.scrollmenu {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
 }
 
 div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px;
+    padding: 20px;
     text-decoration: none;
+    flex-grow: 1;
 }
 
 div.scrollmenu a:hover {

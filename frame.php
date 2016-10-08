@@ -14,7 +14,7 @@
       <div class="col-sm-6">
         <div class="col-xs-3"> <!-- required for floating -->
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs tabs-left">
+          <ul class="nav nav-tabs tabs-left med">
             <li class="active"><a href="#hub" data-toggle="tab">Hub</a></li>
             <li><a href="#pipeline" data-toggle="tab">Pipeline</a></li>
             <li><a href="#calendar" data-toggle="tab">Calendar</a></li>
@@ -28,29 +28,29 @@
             <div class="tab-content">
               <div class="tab-pane active" id="hub">
                 <div class="module" id="top3">
-                  <h3>Top 3 Activites</h3><hr/>
-                  <div id="activity1" class="table top">
+                  <span class="large">Top 3 Activites</span><hr/>
+                  <div id="activity1" class="table top med">
                     activity 1
                   </div>
-                  <div id="activity2" class="table">
+                  <div id="activity2" class="table med">
                     activity 2
                   </div>
-                  <div id="activity3" class="table bottom">
+                  <div id="activity3" class="table bottom med">
                     activity 3
                   </div>
                 </div>
                 <br>
                 <div class="hub">
-                  <div class="survey">
+                  <div class="survey med">
                     <b>survey</b><br>
                     <label><input type="radio" name="survey" id="response1">response one</label><br>
                     <label><input type="radio" name="survey" id="response2">response two</label><br>
                     <input type="button" value="Submit" onClick="sendSurveyResponse();"/>
                   </div>
-                  <div class="points">
-                    points <span class="points" id="points">420</span>
+                  <div class="points med">
+                    points <span id="points">420</span>
                   </div>
-                  <div class="classified">
+                  <div class="classified med">
                     classified
                     <div class="table top">
                       ad 1
@@ -66,26 +66,26 @@
               </div>
               <div class="tab-pane" id="pipeline">
                 <div class="tab-pane pipeline" id="pipeline">
-                  <h3>User Pipelines</h3> <hr/>
-                  College
+                  <span class="large">User Pipelines</span> <hr/>
+                  <span class="med">College</span>
                   <div class="scrollmenu">
                     <a href="#item1">Big Ole Party</a>
                     <a href="#item2">Throwdown</a>
                     <a href="#item3">Job Fair</a>
                   </div>
-                  Work
+                  <span class="med">Work</span>
                   <div class="scrollmenu">
                     <a href="#item2">Partay</a>
                     <a href="#item3">Happy Hour</a>
                     <a href="#item4">Birthday Party</a>
                   </div>
-                  Field
+                  <span class="med">Field</span>
                   <div class="scrollmenu">
                     <a href="#item2">Coffee</a>
                     <a href="#item3">Meetup</a>
                     <a href="#item4">Fun Times</a>
                   </div>
-                  Recommended
+                  <span class="med">Recommended</span>
                   <div class="scrollmenu">
                     <a href="#item2">Concert</a>
                     <a href="#item3">Club Rager</a>
@@ -101,11 +101,13 @@
                 <div id="map"></div>
               </div>
               <div class="tab-pane profile" id="profile">
-                <h3> Profile</h3>
-                <p>Insights about yourself</p>
-                <p>Events you visited</p>
-                <p>Total points: <span class="points" id="pointscp">420</span></p>
-                <p><span onClick="badgers();" class="pointer">Badges</span></p>
+                <span class="large">Profile</span>
+                <div class="hub med">
+                  <p>Insights about yourself</p>
+                  <p>Events you visited</p>
+                  <p>Total points: <span class="points" id="pointscp">420</span></p>
+                </div>          
+                <p><span onClick="badgers();" class="pointer med">Badges</span></p>
                 <div id="badgers">
                   <img src="redder.png" class="badger" id="b0">
                   <img src="fire.png" class="badger" id="b1">
