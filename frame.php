@@ -88,8 +88,8 @@
                     <a href="#item3">Job Fair</a>
                   </div>
                   <span class="med">Work</span><br>
-                  <input type="button" value="<" onClick="rotatePipeline(true);"/>
-                  <input type="button" value=">" onClick="rotatePipeline(false);"/>
+                  <input type="button" value="<" onClick="rotatePipeline(false);"/>
+                  <input type="button" value=">" onClick="rotatePipeline(true);"/>
                   <div class="scrollmenu" id="work">
                     <a href="#item2">Partay</a>
                     <a href="#item3">Happy Hour</a>
