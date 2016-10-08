@@ -81,28 +81,34 @@
               <div class="tab-pane" id="pipeline">
                 <div class="tab-pane pipeline" id="pipeline">
                   <span class="large">User Pipelines</span> <hr/>
-                  <span class="med">College</span>
+                  <span class="med">College</span><br>
+                  <input type="button" value="<" onClick="rotatePipeline(false,'college');"/>
+                  <input type="button" value=">" onClick="rotatePipeline(true,'college');"/>
                   <div class="scrollmenu" id="college">
                     <a href="#item1">Big Ole Party</a>
                     <a href="#item2">Throwdown</a>
                     <a href="#item3">Job Fair</a>
                   </div>
                   <span class="med">Work</span><br>
-                  <input type="button" value="<" onClick="rotatePipeline(false);"/>
-                  <input type="button" value=">" onClick="rotatePipeline(true);"/>
+                  <input type="button" value="<" onClick="rotatePipeline(false,'work');"/>
+                  <input type="button" value=">" onClick="rotatePipeline(true,'work');"/>
                   <div class="scrollmenu" id="work">
                     <a href="#item2">Partay</a>
                     <a href="#item3">Happy Hour</a>
                     <a href="#item4">Birthday Party</a>
                     <a href="#item5">Strike</a>
                   </div>
-                  <span class="med">Field</span>
+                  <span class="med">Field</span><br>
+                  <input type="button" value="<" onClick="rotatePipeline(false,'field');"/>
+                  <input type="button" value=">" onClick="rotatePipeline(true,'field');"/>
                   <div class="scrollmenu" id="field">
                     <a href="#item2">Coffee</a>
                     <a href="#item3">Meetup</a>
                     <a href="#item4">Fun Times</a>
                   </div>
-                  <span class="med">Recommended</span>
+                  <span class="med">Recommended</span><br>
+                  <input type="button" value="<" onClick="rotatePipeline(false,'recommended');"/>
+                  <input type="button" value=">" onClick="rotatePipeline(true,'recommended');"/>
                   <div class="scrollmenu" id="recommended">
                     <a href="#item2">Concert</a>
                     <a href="#item3">Club Rager</a>

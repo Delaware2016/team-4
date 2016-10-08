@@ -77,7 +77,10 @@ function badgers() {
     (document.getElementById('badgers').style.display == 'block') ? 'none' : 'block';
 }
 
-var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+var pipes ={'work' : ['Partay', 'Happy Hour', 'Birthday Party', 'Strike', 'five', 'six', 'seven'],
+            'college' : ['Big Ole Party', 'Throwdown', 'Job Fair', 'extra', 'ahhh'],
+            'field' : ['Coffee', 'Meetup', 'Fun Times', 'one', 'two'],
+            'recommended' : ['Concert', 'Club Rager', 'Good Stuff', 'one', 'two']};
 var limit = 5;
 
 // generates pipeline 
@@ -86,23 +89,23 @@ function populatePipeline() {
 
   for (let i = 0; i < limit; i++) {
     document.getElementById("work").innerHTML += 
-      "<a href='#item" + i + "'>" + pipes[i] + "</a>";
+      "<a href='#item" + i + "'>" + pipes[id][i] + "</a>";
   }
 }
 
 // rotates pipeline cw/cc 
-function rotatePipeline(cw) {
-  document.getElementById("work").innerHTML = '';
+function rotatePipeline(cw, id) {
+  document.getElementById(id).innerHTML = '';
 
   if (cw) {
-    rotate(pipes);
+    rotate(pipes[id]);
   } else {
-    rotateRev(pipes);
+    rotateRev(pipes[id]);
   }
 
   for (let i = 0; i < limit; i++) {
-    document.getElementById("work").innerHTML += 
-      "<a href='#item" + i + "'>" + pipes[i] + "</a>";
+    document.getElementById(id).innerHTML += 
+      "<a href='#item" + i + "'>" + pipes[id][i] + "</a>";
   }
 }
 
