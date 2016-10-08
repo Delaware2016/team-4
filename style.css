@@ -1,16 +1,21 @@
-.container{
-  display: flex;
-}
-
-.module-left {
-
-}
-
-.module-middle {
+.module {
   
 }
 
-.module-right {
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.survey {
+
+}
+
+.points {
+  
+}
+
+.classified {
   
 }
 
