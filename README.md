@@ -1,1 +1,1 @@
-fomow
+FOMO ftw
