@@ -79,8 +79,13 @@ div.scrollmenu a:hover {
   background: #fff;
 }
 
+<<<<<<< HEAD
+  .bgimg-1 {
+    background-image: url('lewes.jpg');
+=======
 .bgimg-1 {
     background-image: url('delaware.jpg');
+>>>>>>> a675f9a52d652205c918a0eb71e1974eb5b410c9
     min-height: 100%;
     background-position: center;
     background-size: cover;
