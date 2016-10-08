@@ -15,11 +15,12 @@ if (isset($_POST['confirmUser'])) {
     $selected = mysql_select_db($database, $dbhandle)
       or die("Could not select database");
 
-    $result = mysql_query("select Firstname from users where Email='".$_POST['uname']."' and Password='".$_POST['pword']."'");
+    $result = mysql_query("select Firstname, points from users where Email='".$_POST['uname']."' and Password='".$_POST['pword']."'");
 
     $row = mysql_fetch_array($result);
     if (!empty($row)) {
       $_SESSION['uname'] = $row['Firstname'];
+      $_SESSION['points'] = $row['points'];
       header("Location: ./frame.php");
     } else {
       $errorMessage .= "<br /> <h4><strong> Incorrect Username/Password Combination </strong></h4>";

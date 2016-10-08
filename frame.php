@@ -35,7 +35,7 @@
             <div class="tab-content">
               <div class="tab-pane active" id="hub">
                 <div class="module" id="top3">
-                  <span class="large">Top 3 Activites</span><hr/>
+                  <span class="large">Popular Activites</span><hr/>
 <?php
   require_once("dbLogin.php");
 
@@ -62,7 +62,10 @@
                     <input type="button" value="Submit" onClick="sendSurveyResponse();"/>
                   </div>
                   <div class="points med">
-                    points <span id="points">420</span>
+		    <?php
+                    session_start();
+                    echo "points <span>".$_SESSION['points']."</span>"
+                    ?>
                   </div>
                   <div class="classified med">
                     classified
@@ -128,7 +131,10 @@
                   <ul class = "profile-list">
                   <li><p>Insights about yourself</p></li>
                   <li><p>Events you visited</p></li>
-                  <li><p>Total points: <span class="points" id="pointscp">420</span></p></li>
+		  <?php
+                  session_start();
+                  echo "<li><p>Total points: <span>".$_SESSION['points']."</span></p></li>";
+                  ?>
                 </ul>
                 </div>
                 <p><span onClick="badgers();" class="pointer med">Badges</span></p>
