@@ -1,0 +1,14 @@
+.module {
+
+}
+
+.table {
+  border: 1px solid #ddd;
+  margin: 0px;
+}
+.top {
+  border-bottom: 0px;
+}
+.bottom {
+  border-top: 0px;
+}
