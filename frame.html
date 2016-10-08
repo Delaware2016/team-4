@@ -26,13 +26,13 @@
         <div class="tab-pane active" id="hub">
           <div class="module" id="top3">
             <h3>Top 3</h3><hr/>
-            <div class="table top">
+            <div id="activity1" class="table top">
               activity 1
             </div>
-            <div class="table">
+            <div id="activity2" class="table">
               activity 2
             </div>
-            <div class="table bottom">
+            <div id="activity3" class="table bottom">
               activity 3
             </div>
           </div>
@@ -42,7 +42,7 @@
               <b>survey</b><br>
               <label><input type="radio" name="survey" id="response1">response one</label><br>
               <label><input type="radio" name="survey" id="response2">response two</label>
-            </div> 
+            </div>
             <div class="points">
               points <span class="points" id="points">420</span>
             </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="tab-pane" id="pipeline">Pipeline Tab.
 	<div class="tab-pane" id="pipeline">
-		<h3>User Pipleines</h3> <hr/>
+		<h3>User Pipelines</h3> <hr/>
 		<div class = "top">
 		College
 			<div class="scrollmenu">
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 		<div class = "bottom">
-		Reccomended
+		Recommended
 			<div class="scrollmenu">
   			<a href="#item2">Concert</a>
   			<a href="#item3">Club Rager</a>
@@ -107,7 +107,9 @@
 
 	</div>
 	</div>
-        <div class="tab-pane" id="calendar">Calendar Tab.</div>
+        <div class="tab-pane" id="calendar">Calendar Tab.
+          <div id = "calendar-container"></div>
+        </div>
         <div class="tab-pane" id="map">Map Tab.</div>
         <div class="tab-pane" id="profile">
           <h3> Profile</h3>
@@ -122,7 +124,10 @@
   </div>
   </div>
 
+  <script src="hub.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src = "framecalendar.js"></script>
 </body>
 </html>
