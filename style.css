@@ -116,17 +116,23 @@ div.scrollmenu a:hover {
 }
 
 
-  .bgimg-1 {
-    background-image: url('lewes.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
+.bgimg-1 {
+  background-image: url('lewes.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  width:100px;
+  height: 100px;
+}
 
 #map {
   height: 400px;
   width: 100%;
 }
+
 body,h1, h3 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 body {
