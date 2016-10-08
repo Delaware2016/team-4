@@ -142,7 +142,7 @@ div.content{
           <h3> Profile</h3>
           <p>Insights about yourself</p>
           <p>Events you visited</p>
-          <p>Total points: 420</p>
+          <p>Total points: <span class="points" id="pointscp">420</span></p>
           <p>Badges</p>
         </div>
 
@@ -162,6 +162,8 @@ div.content{
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS6VVHtcbw9E2f4jdq4IBgt8bDU6wBbHU&callback=initMap">
   </script>
+
+  <script>$(document).on("click","#map_pane_tag",initMap)</script>
 
 </body>
 </html>
