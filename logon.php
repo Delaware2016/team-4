@@ -36,8 +36,8 @@ if (isset($_POST['confirmUser'])) {
       <div id = "login_style">
         <p> Logging into FOMO gives you access to the best Delaware has to offer! </p>
         <form action="$scriptName" method="post">
-          <input type="text" name="email" placeholder="Email" required />
-          <input type="password" name="password" placeholder="*****" required />
+          <input type="text" name="uname" placeholder="Email" required />
+          <input type="password" name="pword" placeholder="*****" required />
           <input type="submit" name="confirmUser" value="Login" />
         </form>
       </div>
