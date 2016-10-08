@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="calendar.css">
   </head>
   <body>
+    <table><tr><td>
     <img src="fomo_logo.png" alt="FOMO - DE" class="logo">
+    </td><td>
+    <?php
+      session_start();
+      echo "<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;Hello, ".$_SESSION['uname']."</strong></p>";
+    ?>
+    </tr></table>
     <div class="row" style="min-height:600px;">
       <div class="col-sm-6">
         <div class="col-xs-3"> <!-- required for floating -->
@@ -29,15 +36,22 @@
               <div class="tab-pane active" id="hub">
                 <div class="module" id="top3">
                   <span class="large">Top 3 Activites</span><hr/>
-                  <div id="activity1" class="table top med">
-                    activity 1
-                  </div>
-                  <div id="activity2" class="table med">
-                    activity 2
-                  </div>
-                  <div id="activity3" class="table bottom med">
-                    activity 3
-                  </div>
+<?php
+  require_once("dbLogin.php");
+
+  $dbhandle = mysql_connect($host, $user, $password)
+    or die("could not connect to host");
+
+  $selected = mysql_select_db("fomo", $dbhandle)
+    or die("could not access database");
+
+  $result = mysql_query("select Name, Attendees from events");
+
+  for ($i=0; $i<3; $i++) {
+    $row = mysql_fetch_array($result);
+    echo "<div>".$row{'Name'}." | Attending: ".$row{'Attendees'}."</div>";
+  }
+?>
                 </div>
                 <br>
                 <div class="hub">
