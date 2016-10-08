@@ -57,9 +57,16 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
     background-color: #777;
 }
+<<<<<<< HEAD
 .bgimg-1 {
     background-image: url('delaware.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
+=======
+
+#map {
+  height: 400px;
+  width: 100%;
+>>>>>>> 25fc66a36ef693a2715094cd2a14bd2c8e20a28d
 }

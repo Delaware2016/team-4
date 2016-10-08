@@ -14,12 +14,31 @@ function populateSurvey() {
   var question = survey.getQuestionsomehow; // survey question
   var choices = survey.getChoicesmagically; // choices
 
-  document.getElementById("survey").innerHTML = "<b>" + question.dataorsomething + "</b>";
+  document.getElementById("survey").innerHTML = "<b>" + question.dataorsomething + "</b><br>";
 
   for (let i = 0, choice; choice = choices[i]; i++) {
     document.getElementById("survey").innerHTML += 
-      "<br><label><input type='radio' name='survey' id='response" + i + "'>" + 
-      choice.dataorsomething + "</label>";
+      "<label><input type='radio' name='survey' id='response" + i + "'>" + 
+      choice.dataorsomething + "</label><br>";
+  }
+
+  document.getElementById("survey").innerHTML += "<input type='button' onClick='sendSurveyResponse();' value='Submit'/>";
+}
+
+// sends survey answer to db, populates next one if available
+function sendSurveyResponse() {
+  var answers = document.getElementsByName("survey");
+
+  for (let i = 0, answer; answer = answers[i]; i++) {
+    if (answer.checked) {
+      // send answer to db
+
+      // check db for more surveys
+      // if more
+      populateSurvey();
+
+      break;
+    }
   }
 }
 
