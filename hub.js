@@ -71,15 +71,17 @@ function massage(s) {
   return s;
 }
 
+// display toggle for badges
 function badgers() {
   document.getElementById('badgers').style.display = 
     (document.getElementById('badgers').style.display == 'block') ? 'none' : 'block';
 }
-var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
-function populatePipeline() {
-  
-  var limit = 5;
 
+var pipes = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+var limit = 5;
+
+// generates pipeline 
+function populatePipeline() {
   document.getElementById("work").innerHTML = '';
 
   for (let i = 0; i < limit; i++) {
@@ -88,10 +90,10 @@ function populatePipeline() {
   }
 }
 
+// rotates pipeline cw/cc 
 function rotatePipeline(cw) {
-  var limit = 5;
-
   document.getElementById("work").innerHTML = '';
+
   if (cw) {
     rotate(pipes);
   } else {
@@ -104,10 +106,12 @@ function rotatePipeline(cw) {
   }
 }
 
+// rotates cw
 function rotateRev(a) {
   a.unshift(a.pop());
 }
 
+// rotates cc
 function rotate(a) {
   a.push(a.splice(0,1)[0]);
 }
