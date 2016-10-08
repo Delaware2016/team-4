@@ -1,10 +1,46 @@
 .module {
-
+  background-color: rgba(255,255,255,0.75); 
+  border-radius: 25px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 20px; 
+  text-align:center;
 }
 
 .hub{
   display: flex;
   justify-content: space-between;
+  background-color: rgba(255,255,255,0.75); 
+  border-radius: 25px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 20px; 
+  text-align:center;
+}
+.pipeline {
+  background-color: rgba(255,255,255,0.75); 
+  border-radius: 25px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 20px; 
+  text-align:center;
+}
+
+.calendar {
+  background-color: rgba(255,255,255,0.75); 
+  border-radius: 25px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 20px; 
+  text-align:center;
+}
+
+.profile {
+  background-color: rgba(255,255,255,0.75); 
+  border-radius: 25px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 20px;
 }
 
 .survey {
@@ -80,17 +116,23 @@ div.scrollmenu a:hover {
 }
 
 
-  .bgimg-1 {
-    background-image: url('lewes.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
+.bgimg-1 {
+  background-image: url('lewes.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  width:100px;
+  height: 100px;
+}
 
 #map {
   height: 400px;
   width: 100%;
 }
+
 body,h1, h3 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 body {
