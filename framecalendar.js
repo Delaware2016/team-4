@@ -7,14 +7,14 @@ $('#calendar-container').datepicker({
 });
 
 $('#calendar-container td').click(function(){
-  //grab date, time, and name fields and print them out
+  //grab date, time, and name fields and displays them on the screen ala google maps
   //i'm too bad to do that...
   alert("Todays event at: " + Events[0].name + " at " + Events[0].date );
 });
 
 //hard coded business event
 var chickenBeer = {
- name: "Chicken Beer 2016",
+ name: "Chicken and Beer 2016",
  location: "880 Power mill rd",
  uid: 1846,
  pplAttended: 1234,
@@ -32,5 +32,5 @@ var dankMemes = {
   type: "Funny"
 };
 
-//hard coded array of events
+//hard coded array of businesses w/ events
 var Events = [chickenBeer, dankMemes]
