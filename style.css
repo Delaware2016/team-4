@@ -4,6 +4,7 @@
   padding-left: 20px; 
   padding-right: 20px; 
   padding-bottom: 20px; 
+  padding-top: 5px;
   text-align:center;
 }
 
@@ -14,7 +15,8 @@
   border-radius: 25px; 
   padding-left: 20px; 
   padding-right: 20px; 
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
+  padding-top: 10px; 
   text-align:center;
 }
 .pipeline {
@@ -23,6 +25,7 @@
   padding-left: 20px; 
   padding-right: 20px; 
   padding-bottom: 20px; 
+  padding-top: 5px;
   text-align:center;
 }
 
@@ -31,24 +34,21 @@
   border-radius: 25px; 
   padding-left: 20px; 
   padding-right: 20px; 
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   text-align:center;
 }
 
 .profile {
   background-color: rgba(255,255,255,0.75); 
   border-radius: 25px; 
-  padding-left: 20px; 
-  padding-right: 20px; 
-  padding-bottom: 20px;
+  padding-left: 25px; 
+  padding-right: 25px; 
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .survey {
 
-}
-
-.points {
-  
 }
 
 .classified {
@@ -68,7 +68,8 @@
   border-top: 0px;
 }
 
-h3 {
+hr {
+  margin-bottom: 0px;
   margin-top: 0px;
 }
 
@@ -76,18 +77,29 @@ h3 {
   color: green;
 }
 
+.large {
+  font-size: 2em;
+}
+
+.med {
+  font-size: 1.5em;
+}
+
 div.scrollmenu {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
 }
 
 div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px;
+    padding: 20px;
     text-decoration: none;
+    flex-grow: 1;
 }
 
 div.scrollmenu a:hover {
@@ -116,17 +128,36 @@ div.scrollmenu a:hover {
 }
 
 
-  .bgimg-1 {
-    background-image: url('lewes.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
+.bgimg-1 {
+  background-image: url('lewes.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.badger {
+  width: 30px;
+  height: 30px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#badgers {
+  display: none;
+}
 
 #map {
   height: 80%;
   width: 130%;
 }
+
 body,h1, h3 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 body {

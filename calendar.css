@@ -36,10 +36,15 @@
   text-align: right;
 }
 
-.ui-datepicker-prev{margin-right: 20px;}
+.ui-datepicker-prev{
+  margin-right: 20px;
+  cursor: pointer;
+}
 
-.ui-datapicker-next{margin-left: 20px;}
-
+.ui-datapicker-next{
+  margin-left: 20px;
+  cursor: pointer;
+}
 
 .ui-datepicker-calendar th{
   width:500px;
@@ -55,6 +60,7 @@
   border:1px solid green;
   text-align: center;
   opacity: .5;
+  color: black;
 }
 
 
@@ -62,6 +68,7 @@
   background:yellow;
   opacity: .75;
 }
-.ui-datepicker-today:hover{
-  opacity:1;
+.ui-datepicker-calendar td:hover{
+  background: blue;
+  opacity: .65;
 }
