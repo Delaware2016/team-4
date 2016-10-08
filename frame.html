@@ -1,36 +1,32 @@
 <html>
 <title>FOMO Hub</title>
-<head>
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+ <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="calendar.css">
-
+ <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="calendar.css">
 
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
+body,h1, h3 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
-.bgimg-1 {
+body {
     background-image: url('lewes.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
 }
-  
-  #map {
-            height: 50%;
-            width: 120%;
-            overflow: visible
-        }
+
+div.content{
+	background-color: white;
+}
+
 </style>
 
-</head>
 <body>
 	<img src="fomo_logo.png" alt="FOMO - DE" style="width:100px;height100px;">
-
-
+ 
   <div class="row" style="min-height:600px;">
   <div class="col-sm-6">
   <div class="col-xs-3"> <!-- required for floating -->
@@ -39,14 +35,16 @@ body, html {height: 100%}
       <li class="active"><a href="#hub" data-toggle="tab">Hub</a></li>
       <li><a href="#pipeline" data-toggle="tab">Pipeline</a></li>
       <li><a href="#calendar" data-toggle="tab">Calendar</a></li>
-      <li><a href="#map_pane" data-toggle="tab" id = "map_pane_tag">Map</a></li>
+      <li><a href="#map_pane" data-toggle="tab">Map</a></li>
       <li><a href="#profile" data-toggle="tab">Profile</a></li>
     </ul>
   </div>
+<div class="content">
   <div class="col-xs-9">
       <!-- Tab panes -->
       <div class="tab-content">
         <div class="tab-pane active" id="hub">
+		
           <div class="module" id="top3">
             <h3>Top 3 Activites</h3><hr/>
             <div id="activity1" class="table top">
@@ -131,7 +129,7 @@ body, html {height: 100%}
 
 	</div>
 	</div>
-        <div class="tab-pane" id="calendar">
+        <div class="tab-pane" id="calendar">Calendar Tab.
           <div id = "calendar-container"></div>
         </div>
         <div class="tab-pane" id="map_pane">
@@ -152,6 +150,8 @@ body, html {height: 100%}
   </div>
   </div>
   </div>
+</div>
+</div>
 
   <script src="hub.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -162,12 +162,6 @@ body, html {height: 100%}
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS6VVHtcbw9E2f4jdq4IBgt8bDU6wBbHU&callback=initMap">
   </script>
-<<<<<<< HEAD
-  
-  <script>$(document).on("click","#map_pane_tag",initMap)</script>
-  
-=======
 
->>>>>>> 4876a3c8ed4771880ea50c3fe3c30d936a9e0e0a
 </body>
 </html>
