@@ -54,16 +54,11 @@
   padding-bottom: 5px;
   border:1px solid green;
   text-align: center;
-  opacity: .5;
-}
-
-.ui-datepicker-calendar td:hover{
-  background: blue;
 }
 
 .ui-datepicker-today{
   background:yellow;
-  opacity: .7;
+  opacity: .5;
 }
 .ui-datepicker-today:hover{
   opacity:1;
