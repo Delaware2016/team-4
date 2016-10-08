@@ -22,7 +22,7 @@ body, html {height: 100%}
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
     <img src="fomo_logo.png" alt="FOMO - DE" style="width:100px; height: 100px;">
   </div>
-  <div style="background-color: rgba(0,0,0,0.5); border-radius: 25px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; text-align:center" class="w3-display-middle">
+  <div style="background-color: rgba(0,0,0,0.75); border-radius: 25px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; text-align:center" class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top">FOMO LOGIN</h1>
     <hr/>
 		<div id = "login_style">
