@@ -4,7 +4,13 @@
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
   <link rel="stylesheet" href="style.css">
-
+  <style>
+        #map {
+            height: 50%;
+            width: 120%;
+            overflow: visible
+        }
+    </style>
 </head>
 <body>
   <h1>FOMO - DE</h1><hr/>
@@ -16,7 +22,7 @@
       <li class="active"><a href="#hub" data-toggle="tab">Hub</a></li>
       <li><a href="#pipeline" data-toggle="tab">Pipeline</a></li>
       <li><a href="#calendar" data-toggle="tab">Calendar</a></li>
-      <li><a href="#map_pane" data-toggle="tab">Map</a></li>
+      <li><a href="#map_pane" data-toggle="tab" id = "map_pane_tag">Map</a></li>
       <li><a href="#profile" data-toggle="tab">Profile</a></li>
     </ul>
   </div>
@@ -138,6 +144,8 @@
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS6VVHtcbw9E2f4jdq4IBgt8bDU6wBbHU&callback=initMap">
   </script>
+  
+  <script>$(document).on("click","#map_pane_tag",initMap)</script>
   
 </body>
 </html>
