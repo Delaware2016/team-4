@@ -13,11 +13,11 @@ if (isset($_POST['confirmUser'])) {
     $selected = mysql_select_db($database, $dbhandle)
       or die("Could not select database");
 
-    $result = mysql_query("select Firstname from ".$usersTable." where Email='".$_POST['email']."'and Password='".$_POST['password']."';");
+    $result = mysql_query("select Firstname from users where Email='".$_POST['uname']."' and Password='".$_POST['pword']."'");
 
-    // Lol this doesnt actually do what it's supposed to do 
-    // Password does not have to be correct
-    if (!empty($result)) {
+    $row = mysql_fetch_array($result);
+    if (!empty($row)) {
+      //echo $row{'Firstname'};
       header("Location: ./frame.php");
     } else {
       $footer .= "<br /> <h3><strong> Incorrect Username/Password Combination </strong></h3>";
@@ -36,8 +36,8 @@ if (isset($_POST['confirmUser'])) {
       <div id = "login_style">
         <p> Logging into FOMO gives you access to the best Delaware has to offer! </p>
         <form action="$scriptName" method="post">
-          <input type="text" name="email" placeholder="Email" required />
-          <input type="password" name="password" placeholder="*****" required />
+          <input type="text" name="uname" placeholder="Email" required />
+          <input type="password" name="pword" placeholder="*****" required />
           <input type="submit" name="confirmUser" value="Login" />
         </form>
       </div>
