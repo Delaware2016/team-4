@@ -12,11 +12,11 @@
 }
 
 .points {
-
+  
 }
 
 .classified {
-
+  
 }
 
 .table {
@@ -57,24 +57,9 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
     background-color: #777;
 }
-
-.ui-datepicker,
-.ui-datepicker table,
-.ui-datepicker tr,
-.ui-datepicker td,
-.ui-datepicker th {
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-spacing: 0;
-}
-
-.ui-datepicker{
-  display: none;
-  width: 250px;
-  padding: 15px;
-  text-transform: lowercase;
-  font-size: 15px;
-
-  background: #fff;
+.bgimg-1 {
+    background-image: url('delaware.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
