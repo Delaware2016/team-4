@@ -9,7 +9,17 @@ $('#calendar-container').datepicker({
 $('#calendar-container td').click(function(){
   //grab date, time, and name fields and displays them on the screen ala google maps
   //i'm too bad to do that...
-  alert("Todays event at: " + Events[0].name + " at " + Events[0].date );
+  $( "#dialog" ).dialog({
+  dialogClass: "no-close",
+  buttons: [
+    {
+      text: "The event today is: " + Events[0] + " at " + calendar-container.getDate(),
+      click: function() {
+        $( this ).dialog( "close" );
+      }
+    }
+  ]
+});
 });
 
 //hard coded business event
