@@ -35,7 +35,7 @@
             <div class="tab-content">
               <div class="tab-pane active" id="hub">
                 <div class="module" id="top3">
-                  <span class="large">Top 3 Activites</span><hr/>
+                  <span class="large">Popular Activites</span><hr/>
 <?php
   require_once("dbLogin.php");
 
