@@ -18,8 +18,7 @@ if (isset($_POST['confirmUser'])) {
     // Lol this doesnt actually do what it's supposed to do 
     // Password does not have to be correct
     if (!empty($result)) {
-      echo "<h1>butttt</h1>";
-      header("Location: ./frame.html");
+      header("Location: ./frame.php");
     } else {
       $footer .= "<br /> <h3><strong> Incorrect Username/Password Combination </strong></h3>";
     }   
