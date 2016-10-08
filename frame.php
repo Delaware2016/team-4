@@ -99,7 +99,6 @@
                     <a href="#item2">Partay</a>
                     <a href="#item3">Happy Hour</a>
                     <a href="#item4">Birthday Party</a>
-                    <a href="#item5">Strike</a>
                   </div>
                   <span class="med">Field</span><br>
                   <input type="button" value="<" onClick="rotatePipeline(false,'field');"/>
