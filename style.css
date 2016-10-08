@@ -173,3 +173,7 @@ body {
 div.content{
   background-color: white;
 }
+
+.profile-list{
+  list-style: none;
+}

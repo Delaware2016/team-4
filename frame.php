@@ -126,9 +126,11 @@
               <div class="tab-pane profile" id="profile">
                 <span class="large">Profile</span>
                 <div class="hub med">
-                  <p>Insights about yourself</p>
-                  <p>Events you visited</p>
-                  <p>Total points: <span class="points" id="pointscp">420</span></p>
+                  <ul class = "profile-list">
+                  <li><p>Insights about yourself</p></li>
+                  <li><p>Events you visited</p></li>
+                  <li><p>Total points: <span class="points" id="pointscp">420</span></p></li>
+                </ul>
                 </div>
                 <p><span onClick="badgers();" class="pointer med">Badges</span></p>
                 <div id="badgers">
