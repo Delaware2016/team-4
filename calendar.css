@@ -17,6 +17,8 @@
   font-size: 15px;
   opacity: .75;
   background: #fff;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
   border-radius: 25px;
 }
 
