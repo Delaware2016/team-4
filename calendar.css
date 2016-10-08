@@ -11,10 +11,55 @@
 
 .ui-datepicker{
   display: none;
-  width: 250px;
+  width: 500px;
   padding: 15px;
   text-transform: lowercase;
   font-size: 15px;
-
   background: #fff;
+}
+
+.ui-datepicker-header{
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.ui-datepicker-year{
+  color: #098383;
+}
+
+
+.ui-datepicker-month{
+  text-transform: uppercase;
+  position: relative;
+  text-align: right;
+}
+
+.ui-datepicker-prev{margin-right: 20px;}
+
+.ui-datapicker-next{margin-left: 20px;}
+
+
+.ui-datepicker-calendar th{
+  width:500px;
+  padding-bottom: 15px;
+  text-align:center;
+  color:#000;
+}
+
+.ui-datepicker-calendar td{
+  width: 50px;
+  height:50px;
+  padding-bottom: 5px;
+  border:1px solid green;
+  text-align: center;
+}
+
+.ui-datepicker-today{
+  background:yellow;
+  opacity: .5;
+}
+.ui-datepicker-today:hover{
+  opacity:1;
 }
