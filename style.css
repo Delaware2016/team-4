@@ -4,6 +4,7 @@
   padding-left: 20px; 
   padding-right: 20px; 
   padding-bottom: 20px; 
+  padding-top: 5px;
   text-align:center;
 }
 
@@ -14,7 +15,8 @@
   border-radius: 25px; 
   padding-left: 20px; 
   padding-right: 20px; 
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
+  padding-top: 10px; 
   text-align:center;
 }
 .pipeline {
@@ -23,6 +25,7 @@
   padding-left: 20px; 
   padding-right: 20px; 
   padding-bottom: 20px; 
+  padding-top: 5px;
   text-align:center;
 }
 
@@ -31,16 +34,17 @@
   border-radius: 25px; 
   padding-left: 20px; 
   padding-right: 20px; 
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   text-align:center;
 }
 
 .profile {
   background-color: rgba(255,255,255,0.75); 
   border-radius: 25px; 
-  padding-left: 20px; 
-  padding-right: 20px; 
-  padding-bottom: 20px;
+  padding-left: 25px; 
+  padding-right: 25px; 
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .survey {
@@ -124,8 +128,21 @@ div.scrollmenu a:hover {
 }
 
 .logo {
-  width:100px;
+  width: 100px;
   height: 100px;
+}
+
+.badger {
+  width: 30px;
+  height: 30px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#badgers {
+  display: none;
 }
 
 #map {

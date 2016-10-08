@@ -71,6 +71,11 @@ function massage(s) {
   return s;
 }
 
+function badgers() {
+  document.getElementById('badgers').style.display = 
+    (document.getElementById('badgers').style.display == 'block') ? 'none' : 'block';
+}
+
 window.onload = function() {
   
   /*populateTop3Activites(); // put these on intervals
