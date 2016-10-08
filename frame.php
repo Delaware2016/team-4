@@ -107,7 +107,7 @@
                   <p>Insights about yourself</p>
                   <p>Events you visited</p>
                   <p>Total points: <span class="points" id="pointscp">420</span></p>
-                </div>          
+                </div>
                 <p><span onClick="badgers();" class="pointer med">Badges</span></p>
                 <div id="badgers">
                   <img src="redder.png" class="badger" id="b0">

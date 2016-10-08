@@ -6,9 +6,7 @@ $('#calendar-container').datepicker({
   dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 });
 
-$('a').clicked(function(){
-  document.write(Events[0].name);
-});
+
 
 var chickenBeer = {
  name: "Chicken Beer 2016",
