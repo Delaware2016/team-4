@@ -7,9 +7,12 @@ $('#calendar-container').datepicker({
 });
 
 $('#calendar-container td').click(function(){
+  //grab date, time, and name fields and print them out
+  //i'm too bad to do that...
   alert("Todays event at: " + Events[0].name + " at " + Events[0].date );
 });
 
+//hard coded business event
 var chickenBeer = {
  name: "Chicken Beer 2016",
  location: "880 Power mill rd",
@@ -19,7 +22,7 @@ var chickenBeer = {
  type: "Bar"
 };
 
-
+//hard coded business event
 var dankMemes = {
   name: "Dankest",
   location: "383 new linden hill rd",
@@ -29,4 +32,5 @@ var dankMemes = {
   type: "Funny"
 };
 
+//hard coded array of events
 var Events = [chickenBeer, dankMemes]
