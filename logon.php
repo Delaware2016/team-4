@@ -4,7 +4,9 @@
 
   $usersTable = "users";
   $businessesTable = "businesses";
-  $footer = ""; 
+  $errorMessage = ""; 
+
+  session_start();
 
 if (isset($_POST['confirmUser'])) {
     $dbhandle = mysql_connect($host, $user, $password)
@@ -17,10 +19,10 @@ if (isset($_POST['confirmUser'])) {
 
     $row = mysql_fetch_array($result);
     if (!empty($row)) {
-      //echo $row{'Firstname'};
+      $_SESSION['uname'] = $row['Firstname'];
       header("Location: ./frame.php");
     } else {
-      $footer .= "<br /> <h3><strong> Incorrect Username/Password Combination </strong></h3>";
+      $errorMessage .= "<br /> <h4><strong> Incorrect Username/Password Combination </strong></h4>";
     }   
   }
 
@@ -39,6 +41,7 @@ if (isset($_POST['confirmUser'])) {
           <input type="text" name="uname" placeholder="Email" required />
           <input type="password" name="pword" placeholder="*****" required />
           <input type="submit" name="confirmUser" value="Login" />
+	  <p>$errorMessage<p>
         </form>
       </div>
     </div>
