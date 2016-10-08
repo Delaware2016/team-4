@@ -38,6 +38,23 @@
                   <div id="activity3" class="table bottom med">
                     activity 3
                   </div>
+<?php
+  require_once("dbLogin.php");
+
+  $dbhandle = mysql_connect("localhost", "root", "")
+    or die("could not connect to database");
+
+  $selected = mysql_select_db("fomo", $dbhandle)
+    or die("Could not select database");
+
+  $result = mysql_query("select Name, Attendees from events;");
+
+  for ($i = 0; $i<3; $i++) {
+    $row = mysql_fetch_array($result);
+    echo "<div>".$row{'Name'}." | Attending: ".$row{'Attendees'}."</div>";
+  }
+?>                 
+
                 </div>
                 <br>
                 <div class="hub">
