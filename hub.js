@@ -81,7 +81,7 @@ var pipes ={'work' : ['Partay', 'Happy Hour', 'Birthday Party', 'Strike', 'five'
             'college' : ['Big Ole Party', 'Throwdown', 'Job Fair', 'extra', 'ahhh'],
             'field' : ['Coffee', 'Meetup', 'Fun Times', 'one', 'two'],
             'recommended' : ['Concert', 'Club Rager', 'Good Stuff', 'one', 'two']};
-var limit = 5;
+var limit = 3;
 
 // generates pipeline 
 function populatePipeline() {
